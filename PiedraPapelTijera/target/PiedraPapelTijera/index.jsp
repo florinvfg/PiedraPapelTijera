@@ -30,6 +30,10 @@
     <div class="maquina centrado" >
         <img src="" alt="respuesta maquina" id="respuestaMaquina" class="col-6">
     </div>
+    <div class="contenedor1">
+        <p class="centrado" id="mensaje"></p>
+        <h2 id="contador" class="centrado"></h2>
+    </div>
 </div>
 
 

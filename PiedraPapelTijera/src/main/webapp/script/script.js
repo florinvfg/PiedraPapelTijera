@@ -1,10 +1,12 @@
 window.onload=function () {
+    let contadorU=0;
+    let contadorM=0;
     let div=document.querySelector(".maquina");
     let img=document.querySelector("#respuestaMaquina");
     let user = document.querySelectorAll('input[type=radio][name="opcion"]');//all cuando son varios
     user.forEach(function (userOption) {
         userOption.addEventListener("click", function () {
-
+     document.querySelector("#mensaje").innerHTML="";
             if (this.checked) {
                 //mostrar que opcion marco el cliente
                 let userResp = this.value;
@@ -31,6 +33,29 @@ window.onload=function () {
 
                     }
                 }
+
+
+                if (userResp==maq){
+                    msm="Empate";
+                }else if (userResp==1 && maq==2){
+                    contadorM++;
+                    msm="Gana la Maquina";
+
+                }else if(userResp==1 && maq==3){
+                    contadorU++;
+                    msm="Ganas Tu";
+                }else if(userResp==2 && maq==3){
+                    contadorM++;
+                    msm="Gana la Maquina";
+                }else if(userResp==3 && maq==1){
+                    contadorM++;
+                    msm="Gana la Maquina";
+                }else if (userResp==3 && maq==2){
+                  contadorU++;
+                  msm="Ganas Tu";
+                }
+                document.querySelector("#mensaje").innerHTML=msm;
+                document.querySelector("#contador").innerHTML=`Usuario:${contadorU} | Maquina:${contadorM}`;
             }
         })
 
