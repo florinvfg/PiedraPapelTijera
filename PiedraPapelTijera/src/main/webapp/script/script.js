@@ -58,9 +58,16 @@ window.onload=function () {
                 document.querySelector("#contador").innerHTML=`Usuario:${contadorU} | Maquina:${contadorM}`;
 
 
-            }
-            if (contadorU==10){
-                ganador();
+
+            if (contadorU==10 || contadorM==10){
+                if (contadorU==10){
+                    ganador();
+                }else{
+                    let marquesina=document.querySelector(".marquesina");
+                    marquesina.style.display="block";
+
+                }
+
                 let boton=document.querySelector("#nuevaP");
                 let salir=document.querySelector("#salir")
                 boton.style.display="block";
@@ -74,13 +81,25 @@ window.onload=function () {
 
 
                 })
+                user.forEach(function (userOption){
+                    userOption.disable=true;
+                let imagenes=document.querySelectorAll(".imagenes");
+                imagenes.forEach(function (img){
+                    img.style.transform="scale(1.0)";
+                    img.style.filter="grayscale(100%)";
+                    img.addEventListener("mouseover",function (){
+                        img.style.cursor="none";
+                    })
+                })
+
+                })
             }
-        })
+        }
 
     })
 
 
+})
+
 }
-
-
 

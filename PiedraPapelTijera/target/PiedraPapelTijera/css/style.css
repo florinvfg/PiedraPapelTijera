@@ -30,9 +30,7 @@ body {
     background-color: #172ebd; /* Color de fondo */
     font-family: Verdana; /* Fuente de texto */
     height: 100vh; /* Altura del viewport completo */
-    display: flex; /* Aplica el modelo de caja flexible */
-    align-items: center; /* Centra los elementos verticalmente */
-    justify-content: center; /* Centra los elementos horizontalmente */
+   
 }
 
 .boton {
@@ -94,7 +92,7 @@ a {
 input[type="radio"]{
     display: none;
 }
-img:hover{
+.imagenes:hover,.botones{
     cursor: pointer;
     border: 2px solid #aab3ee;
 }
@@ -111,4 +109,10 @@ img:hover{
 }
 body {
     background-color: #172ebd;
+}
+.marquesina{
+    display: none;
+    position: relative;
+    left: 40%;
+
 }
