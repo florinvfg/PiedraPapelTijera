@@ -12,13 +12,22 @@
     display: flex; /* Aplica el modelo de caja flexible */
     align-items: center; /* Centra los elementos verticalmente */
     justify-content: space-between; /* Distribuye los elementos con espacio entre ellos */
-    background-color: #eaa7a7; /* Color de fondo */
+    background-color: #172ebd; /* Color de fondo */
     padding: 50px; /* Espaciado interno de 50px */
     height: 400px; /* Altura fija de 400px */
 }
+.contenedor2 {
+    display: flex; /* Aplica el modelo de caja flexible */
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: space-around; /* Distribuye los elementos con espacio entre ellos */
+    padding: 50px; /* Espaciado interno de 50px */
+    height: 200px; /* Altura fija de 400px */
+    color: #50628f;
+    flex-direction: column;
+}
 
 body {
-    background-color: #260071; /* Color de fondo */
+    background-color: #172ebd; /* Color de fondo */
     font-family: Verdana; /* Fuente de texto */
     height: 100vh; /* Altura del viewport completo */
     display: flex; /* Aplica el modelo de caja flexible */
@@ -28,7 +37,7 @@ body {
 
 .boton {
     padding: 10px 20px; /* Espaciado interno de 10px arriba/abajo y 20px izquierda/derecha */
-    background-color: #eaa7a7; /* Color de fondo */
+    background-color: #172ebd; /* Color de fondo */
     color: #172ebd; /* Color del texto */
     border-radius: 5px; /* Bordes redondeados */
 }
@@ -80,7 +89,7 @@ a {
     display: none;/*no se ve ni deja espacio en documento*/
 }
 .morado{
-   background-color: #260071;
+   background-color: #172ebd;
 }
 input[type="radio"]{
     display: none;
@@ -89,6 +98,9 @@ img:hover{
     cursor: pointer;
     border: 2px solid #aab3ee;
 }
+.botones{
+    justify-content: space-evenly;
+}
 .maquina{
    visibility: hidden;/*no se ve pero deja espacio en documento*/
 
@@ -96,4 +108,7 @@ img:hover{
 .maquina-respuesta{
     display: block;
     border-left:2px  solid red;
+}
+body {
+    background-color: #172ebd;
 }

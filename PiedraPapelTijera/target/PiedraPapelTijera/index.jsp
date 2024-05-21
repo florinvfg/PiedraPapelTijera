@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="script/script.js"></script>
+    <script src="script/ganador.js"></script>
 </head>
 <body>
 <div class="contenedor1 morado">
@@ -30,10 +31,15 @@
     <div class="maquina centrado" >
         <img src="" alt="respuesta maquina" id="respuestaMaquina" class="col-6">
     </div>
-    <div class="contenedor1">
+    <div class="contenedor2 col-4">
         <p class="centrado" id="mensaje"></p>
         <h2 id="contador" class="centrado"></h2>
+        <div class="cajaFlex col-12 botones">
+            <botton class="boton" id="nuevaP">Iniciar nueva partida</botton>
+            <botton class="boton" id="salir">Salir de partida</botton>
+        </div>
     </div>
+
 </div>
 
 

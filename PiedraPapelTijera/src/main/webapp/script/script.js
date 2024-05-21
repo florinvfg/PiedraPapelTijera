@@ -56,6 +56,24 @@ window.onload=function () {
                 }
                 document.querySelector("#mensaje").innerHTML=msm;
                 document.querySelector("#contador").innerHTML=`Usuario:${contadorU} | Maquina:${contadorM}`;
+
+
+            }
+            if (contadorU==10){
+                ganador();
+                let boton=document.querySelector("#nuevaP");
+                let salir=document.querySelector("#salir")
+                boton.style.display="block";
+                salir.style.display="block";
+
+                boton.addEventListener("click",function (){
+                    window.location.replace("index.jsp");
+                })
+                salir.addEventListener("click",function (){
+                 window.close();
+
+
+                })
             }
         })
 
