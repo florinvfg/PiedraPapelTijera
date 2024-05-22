@@ -13,7 +13,7 @@
 <body>
 
 
-        <div class="contenedor1 morado">
+        <div class="contenedor1 col-12">
             <label for="piedra">
         <input type="radio" value="1" name="opcion" id="piedra">
         <img src="img/piedra.png" alt="Piedra"  class="col-6 imagenes">
@@ -40,14 +40,14 @@
             <botton class="boton" id="nuevaP">Iniciar nueva partida</botton>
             <botton class="boton" id="salir">Salir de partida</botton>
         </div>
-    </div>
+
         </div>
-            <marquee direction="up"width="100%"
-                     height="500"
-                     class="marquesina col-12" ><img src="img/carita-triste.png" alt="Carita triste"></marquee>
-</div>
-
-
+        </div>
+        <div  class="marquesina "  >
+            <marquee direction="up"
+                     height="1000"
+                   ><img src="img/carita-triste.png" alt="Carita triste"></marquee>
+        </div>
 
 </body>
 </html>
